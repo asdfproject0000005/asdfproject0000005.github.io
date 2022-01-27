@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Petal Runner</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <!-- <img src="Assets/Background-ANIM.gif" class="header-image"> -->
+        <div class="header header-image-element header-background" id="bg0"></div>
+        <div class="header header-image-element header-midlayer" id="bg1"></div>
+        <div class="header header-image-element header-foliage2" id="bg2"></div>
+        <div class="header header-image-element background-block"></div>
+        <div class="header header-image-element header-foliage" id="bg3"></div>
+        <div class="header header-image-element header-rooftop" id="bg4"></div>
+        <div class="header-contents" id="header-contents">
+            <img src="./Assets/PetalRunnerLogo.png" class="header-logo">
+            <br>
+            <iframe width="560" height="315" class="header-video" src="https://www.youtube.com/embed/wKX1_h9ztoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <div class="banner-full-width banner-kickstarter">
+            <a href="#">
+                <img onclick="kickstarter()" src="Assets/202004-kickstarter-logo-white.svg" />
+            </a>
+            <script>
+                function kickstarter(){
+                    alert("Coming soon!");
+                }
+            </script>
+            <br>
+            Coming Soon!
+        </div>
+        <div class="content-block">
+
+        <h2>About Petal Runner</h2>
+        <p>
+            Petal Runner is a slice-of-life RPG, set in the futuristic city of Sapphire Valley.
+        </p>
+        <p>
+            An emerging fuel source derived from flowers — The "Leap Cell" — is powering a new generation of artificial pet technology.<br>
+            Determined to be the best couriers of the new tech, Cali and Kira enroll in the Petal Runner program.
+        </p>
+
+        <h2>Gameplay</h2>
+        <div class="flex-container-features">
+            <div class="feature-container">
+                <div class="feature-image">
+                    <!-- <div class="feature-image-placeholder"></div> -->
+                    <img src="Assets/Ping.gif">
+                </div>
+                <p>Charming environments!</p>
+            </div>
+            <div class="feature-container">
+                <div class="feature-image">
+                    <img src="Assets/sCali_Moped_WebsiteANIM.gif">
+                </div>
+                <p>Open world motorcycling!</p>
+            </div>
+            <div class="feature-container">
+                <div class="feature-image">
+                    <img src="Assets/Benny.gif">
+                </div>
+                <p>Memorable Interactions!</p>
+            </div>
+        </div>
+
+        <h2>Cast</h2>
+        <img src="Assets/CharacterCard-Sheet.png" id="character-sheet">
+        <div class="flex-container-characters">
+
+            <div class="canvas-character-container">
+                <button class="image-button mobile-layout" onclick="charNavigate(-1)">
+                    <img class="char-button char-button-left" src="Assets/Arrow.png">
+                </button>
+                <canvas id="canvas-character" width="72" height="72"></canvas>
+                <button class="image-button mobile-layout" onclick="charNavigate(1)">
+                    <img class="char-button" src="Assets/Arrow.png">
+                </button>
+            </div>
+
+            <div class="character-info-section">
+
+                <div class="character-card">
+                    <h3>CALI</h3>
+                    <p class="character-quote"><i>“The final piece - and just in time too!”</i></p>
+                    <p>Cali’s natural curiosity and inclination for mechanical work led them to build their very own motorcycle! As a lifelong resident of Starglow with a newfound sense of freedom, Cali enrolls in the Petal Runner delivery program and sets off to experience Sapphire Valley in their new role.</p>
+                    <p>
+                        Home District: Starglow<br>
+                        Hobbies: DIY, Spending time with Kira, Daydreaming
+                    </p>
+                </div>
+                <div class="character-card">
+                    <h3>KIRA</h3>
+                    <p class="character-quote"><i>“Ooh Pineapple?! Gimme that sweet juice!!"</i></p>
+                    <p>Kira is Cali’s lifelong AI companion. While most current-generation AI adhere well to the word of their owners, Kira is an older model with a rambunctious and loud spirit.</p>
+                    <p>
+                        Home District: Starglow<br>
+                        Hobbies: Exploring, Spending time with Cali, Snacking
+                    </p>
+                </div>
+                <div class="character-card">
+                    <h3>TIO</h3>
+                    <p class="character-quote"><i>“Hello, [NAME_NOT_FOUND]! Welcome to Sparkle Parcel Co.!”</i></p>
+                    <p>A friendly android with a few loose circuits, TIO is the receptionist for Sparkle Parcel Co. When they’re not busy directing customers, TIO enjoys lending a hand around the front office and delivery bay - often with mixed success.</p>
+                    <p>
+                        Home District: Starglow<br>
+                        Hobbies: Organizing, Graphic Design
+                    </p>
+                </div>
+                <div class="character-card">
+                    <h3>JO</h3>
+                    <p class="character-quote"><i>“Going the extra mile only starts once you reach your destination!”</i></p>
+                    <p>Head of Mentoring for the Petal Runner program’s Starglow branch, Jo is responsible for training all new recruits on delivery and installation of Leap Cells. Her warm demeanor makes her one of the friendliest Mentors across the entirety of Sapphire Valley.</p>
+                    <p>
+                        Home District: Starglow<br>
+                        Hobbies: Music, Gaming
+                    </p>
+                </div>
+                <div class="character-card">
+                    <h3>BENNY</h3>
+                    <p class="character-quote"><i>“I hope your GAMING is better than your RACING!”</i></p>
+                    <p>A fellow recruit in the Petal Runner program, Benny is Cali’s childhood friend and outspoken rival. Together with his noble AI companion Noobis, Benny is out to become top performer among the new recruits.</p>
+                    <p>
+                        Home District: North Valley<br>
+                        Hobbies: Racing, General Antagonizing
+                    </p>
+                </div>
+                <div class="character-card">
+                    <h3>OSCAR</h3>
+                    <p class="character-quote"><i>“...”</i></p>
+                    <p>Even though he’s gainfully employed at Sparkle Parcel Co, not much else is known about the reclusive and mysterious operator of Petal Runner dispatch. </p>
+                    <p>
+                        Home District: Unknown<br>
+                        Hobbies: Anything coffee-related
+                    </p>
+                </div>
+                <div class="character-card">
+                    <h3>DHALIA</h3>
+                    <p class="character-quote"><i>“Wow you’re certainly a peppy one, eh?!”</i></p>
+                    <p>Dahlia is a cyber security major at North Valley High, and works part-time at Ping’s flower shop. She’s interested in the role of computerized control and diagnostic systems to monitor flower growth and lifecycle in the shop.</p>
+                    <p>
+                        Home District: North Valley<br>
+                        Hobbies: Floriculture, Programming, Photography
+                    </p>
+                </div>
+                <div class="character-card">
+                    <h3>PING</h3>
+                    <p class="character-quote"><i>“…too often do we discard the broken; they are simply showing us their story.”</i></p>
+                    <p>An aging model of android technology, Ping has changed gears in life and opened up his own flower shop within Starglow district.</p>
+                    <p>
+                        Home District: Starglow (by way of North Valley)<br>
+                        Hobbies: Floriculture, Ornithology
+                    </p>
+                </div>
+            
+                <div class="button-container-desktop">
+
+                    <button class="image-button" onclick="charNavigate(-1)">
+                        <img class="char-button char-button-left" src="Assets/Arrow.png">
+                    </button>
+    
+                    <button class="image-button button-desktop-right" onclick="charNavigate(1)">
+                        <img class="char-button" src="Assets/Arrow.png">
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <div class="footer">
+        <div>
+            <div class="logo-nps"></div>
+            ©2021 All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>
